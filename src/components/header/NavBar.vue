@@ -5,14 +5,12 @@
       </div>
       <NavMenu />
       <div class="nav-options">
-         <div id="nav-lang">
-            <NavLang />
-         </div>
+         <NavLang />
          <div id="user-account">
             <i>icon</i>
          </div>
          <div id="user-search">
-            <input type="search" placeholder="Search">
+            <input type="search" placeholder="Search...">
             <button class="btn">icon</button>
          </div>
       </div>
@@ -37,12 +35,24 @@ export default {
 
    nav {
       @include flex-between;
+      height: 100%;
 
       .nav-options {
          @include flex-between;
 
-         div {
-            padding: 0 .5rem;
+         #user-account,
+         .nav-lang {
+            padding: 0 .75rem;
+         }
+
+         #user-search {
+            border-left: 1px solid $bg_primary;
+            padding: 1rem;
+
+            input {
+               background-color: transparent;
+               border: none;
+            }
          }
       }
    }

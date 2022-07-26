@@ -1,36 +1,47 @@
 <template>
-   <select>
-      <option 
-         v-for="(flag, index) in navFlags"
-         :key="index"
-         :value="flag.value">
-         <img :src="flag.path" :alt="flag.lang">
-         <p>{{ flag.lang }}</p>
-      </option>
-   </select>
+   <div class="nav-lang">
+      <select>
+         <option 
+            v-for="(lang, index) in navLangs"
+            :key="index"
+            :value="lang.value"
+         >
+            <p>
+               {{ lang.lang }}
+            </p>
+         </option>
+      </select>
+   </div>
 </template>
 
 <script>
 export default {
    data: function() {
       return {
-         navFlags: [
+         navLangs: [
             {
                value: 'en',
-               lang: 'English',
-               path: require('../../assets/img/flags/en.png')
+               lang: 'English'
             },
             {
                value: 'de',
-               lang: 'German',
-               path: require('../../assets/img/flags/de.png')
+               lang: 'German'
             },
             {
                value: 'fr',
-               lang: 'French',
-               path: require('../../assets/img/flags/fr.png')
+               lang: 'French'
             }
          ]
+      }
+   },
+   methods: {
+      getFlag() {
+         console.log(this.navLangs);
+         for (let i = 0; i < this.navLangs.length; i++) {
+            const value = this.navLangs[i].value;
+            console.log(value);
+            return value;
+         }
       }
    }
 }
