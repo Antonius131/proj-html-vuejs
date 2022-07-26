@@ -11,6 +11,17 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+   @import '../../assets/css/mixins.scss';
+   @import '../../assets/css/variables.scss';
+
+   h4 {
+      color: $brand_secondary;
+      font-weight: 300;
+   }
+
+   h1 {
+      color: $brand_primary;
+   }
 
 </style>
