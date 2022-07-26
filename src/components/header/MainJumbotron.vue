@@ -1,6 +1,8 @@
 <template>
    <div class="jumbotron">
-      <SectionTitle />
+      <div class="container">
+         <SectionTitle />
+      </div>
    </div>
 </template>
 
@@ -14,6 +16,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+   @import '../../assets/css/mixins.scss';
+   @import '../../assets/css/variables.scss';
 
 </style>
