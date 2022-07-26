@@ -50,6 +50,8 @@ export default {
             padding: 1rem;
 
             input {
+               font-size: $nav_items;
+               padding: 0.5rem;
                background-color: transparent;
                border: none;
             }
