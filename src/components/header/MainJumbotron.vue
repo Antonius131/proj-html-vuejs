@@ -1,12 +1,16 @@
 <template>
    <div class="jumbotron">
-      
+      <SectionTitle />
    </div>
 </template>
 
 <script>
-export default {
+import SectionTitle from '../main/SectionTitle.vue';
 
+export default {
+   components: { 
+      SectionTitle 
+   }
 }
 </script>
 
