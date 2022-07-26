@@ -1,8 +1,11 @@
 <template>
    <select>
-      <option>
-         <img src="" alt="">
-         <p>Flag</p>
+      <option 
+         v-for="(flag, index) in navFlags"
+         :key="index"
+         :value="flag.value">
+         <img :src="flag.path" :alt="flag.lang">
+         <p>{{ flag.lang }}</p>
       </option>
    </select>
 </template>
