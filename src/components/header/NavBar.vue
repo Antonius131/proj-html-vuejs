@@ -36,6 +36,7 @@ export default {
    nav {
       @include flex-between;
       height: 100%;
+      padding-left: 4rem;
 
       .nav-options {
          @include flex-between;

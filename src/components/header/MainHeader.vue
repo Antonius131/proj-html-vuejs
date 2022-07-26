@@ -1,5 +1,5 @@
 <template>
-   <header class="container-lg">
+   <header>
       <NavBar />
       <MainJumbotron />
    </header>
@@ -18,7 +18,5 @@ export default {
 </script>
 
 <style>
-   .container-lg {
-      padding: 1rem 0rem 1rem 4rem;
-   }
+
 </style>

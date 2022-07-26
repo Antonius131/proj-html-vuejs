@@ -20,4 +20,7 @@ export default {
    @import '../../assets/css/mixins.scss';
    @import '../../assets/css/variables.scss';
 
+   .jumbotron {
+      background-color: $hero_bg;
+   }
 </style>
