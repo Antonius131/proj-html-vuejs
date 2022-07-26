@@ -33,4 +33,9 @@ export default {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     color: #2c3e50;
   }
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
 </style>
