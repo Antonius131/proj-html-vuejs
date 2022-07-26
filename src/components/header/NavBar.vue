@@ -6,20 +6,7 @@
       <NavMenu />
       <div class="nav-options">
          <div id="nav-lang">
-            <select>
-               <option value="en" selected>
-                  <img src="" alt="en-flag">
-                  <p>English</p>
-               </option>
-               <option value="de">
-                  <img src="" alt="de-flag">
-                  <p>German</p>
-               </option>
-               <option value="fr">
-                  <img src="" alt="fr-flag">
-                  <p>French</p>
-               </option>
-            </select>
+            <NavLang />
          </div>
          <div id="user-account">
             <i>icon</i>
@@ -34,10 +21,12 @@
 
 <script>
 import NavMenu from './NavMenu.vue';
+import NavLang from './NavLang.vue';
 
 export default {
-   components: { 
-      NavMenu
+   components: {
+      NavMenu,
+      NavLang
    }
 }
 </script>
@@ -48,9 +37,6 @@ export default {
 
    nav {
       @include flex-between;
-
-      #nav-brand {
-      }
 
       .nav-options {
          @include flex-between;
