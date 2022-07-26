@@ -5,7 +5,7 @@
             v-for="item in navMenuItems"
             :key="item"
          >
-         {{ item }}   
+         <a href="#">{{ item }}</a>
          </li>
       </ul>
    </div>
@@ -28,6 +28,26 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+   @import '../../assets/css/mixins.scss';
+   @import '../../assets/css/variables.scss';
 
+   .nav-menu {
+      text-align: center;
+
+      ul {
+         list-style: none;
+
+         li {
+            font-size: $nav_items;
+            display: inline;
+            margin: 0 1rem;
+
+            a {
+               color: $brand_primary;
+               text-decoration: none;
+            }
+         }
+      }
+   }
 </style>

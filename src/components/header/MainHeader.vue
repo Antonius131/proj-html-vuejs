@@ -1,5 +1,5 @@
 <template>
-   <header>
+   <header class="container-lg">
       <NavBar />
    </header>
 </template>
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style>
-
+   .container-lg {
+      padding: 1rem 0rem 1rem 4rem;
+   }
 </style>

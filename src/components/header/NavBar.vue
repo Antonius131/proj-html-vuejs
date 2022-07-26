@@ -42,6 +42,24 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+   @import '../../assets/css/mixins.scss';
+   @import '../../assets/css/variables.scss';
 
+   nav {
+      @include flex-between;
+
+      #nav-brand {
+      }
+
+      .nav-options {
+         @include flex-between;
+
+         div {
+            padding: 0 .5rem;
+         }
+      }
+   }
+
+   
 </style>
