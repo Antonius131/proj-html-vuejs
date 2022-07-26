@@ -22,6 +22,8 @@ export default {
 </script>
 
 <style lang="scss">
+   @import './assets/css/mixins.scss';
+   @import './assets/css/variables.scss';
 
   * {
     margin: 0;
@@ -35,6 +37,7 @@ export default {
   }
 
   .container {
+    @include flex-between;
     width: 70%;
     margin: 0 auto;
   }
