@@ -3,10 +3,10 @@
       <div class="col-4">
          <div class="card mb-3">
             <div class="row g-0">
-               <div class="col-md-4">
+               <div class="col-2">
                   <i>icon</i>
                </div>
-               <div class="col-md-8">
+               <div class="col-10">
                   <div class="card-body">
                      <h5 class="card-title">Title</h5>
                      <p class="card-text">Subtitle</p>
@@ -53,6 +53,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+   .card {
+      border: none;
+      
+      .row {
+         padding: 0;
+      }
 
+      .card-body {
+         padding: 0;
+      }
+   }
 </style>
