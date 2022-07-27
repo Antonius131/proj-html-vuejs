@@ -57,6 +57,12 @@
             </div>
          </div>
       </section>
+         <SectionTitle
+            subtitle = "Wanna transform your life?"
+            title= "Upcoming Events" />
+      <section>
+
+      </section>
    </main>
 </template>
 
@@ -70,19 +76,21 @@ import CourseCards from './CourseCards.vue'
 import CaptionText from './CaptionText.vue'
 import InfoTabs from './InfoTabs.vue'
 import ImgPreview from './ImgPreview.vue'
+import SectionTitle from './SectionTitle.vue'
 
 export default {
    components: {
-      BrandCards,
-      SectionTitle,
-      SecondaryBtn,
-      PrimaryBtn,
-      CoachCards,
-      CourseCards,
-      CaptionText,
-      InfoTabs,
-      ImgPreview
-   }
+    BrandCards,
+    SectionTitle,
+    SecondaryBtn,
+    PrimaryBtn,
+    CoachCards,
+    CourseCards,
+    CaptionText,
+    InfoTabs,
+    ImgPreview,
+    SectionTitle
+}
 }
 </script>
 
