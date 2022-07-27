@@ -37,6 +37,7 @@
                title= "Explore how can I help you"
             />
             <CourseCards />
+            <CaptionText />
          </div>
       </section>
    </main>
@@ -49,16 +50,18 @@ import SecondaryBtn from './SecondaryBtn.vue'
 import PrimaryBtn from './PrimaryBtn.vue'
 import CoachCards from './CoachCards.vue'
 import CourseCards from './CourseCards.vue'
+import CaptionText from './CaptionText.vue'
 
 export default {
    components: {
-      BrandCards,
-      SectionTitle,
-      SecondaryBtn,
-      PrimaryBtn,
-      CoachCards,
-      CourseCards
-   }
+    BrandCards,
+    SectionTitle,
+    SecondaryBtn,
+    PrimaryBtn,
+    CoachCards,
+    CourseCards,
+    CaptionText
+}
 }
 </script>
 
