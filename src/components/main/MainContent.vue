@@ -26,6 +26,7 @@
                subtitle = "Let's dream big together"
                title= "Explore how can I help you"
             />
+            <CoachCards />
          </div>
       </section>
    </main>
@@ -36,13 +37,15 @@ import BrandCards from './BrandCards.vue'
 import SectionTitle from './SectionTitle.vue'
 import SecondaryBtn from './SecondaryBtn.vue'
 import PrimaryBtn from './PrimaryBtn.vue'
+import CoachCards from './CoachCards.vue'
 
 export default {
    components: {
       BrandCards,
       SectionTitle,
       SecondaryBtn,
-      PrimaryBtn
+      PrimaryBtn,
+      CoachCards
    }
 }
 </script>
