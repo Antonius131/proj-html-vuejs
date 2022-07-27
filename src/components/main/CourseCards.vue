@@ -81,6 +81,14 @@ export default {
       .card {
          border: none;
 
+         &:hover {
+            cursor: pointer;
+
+            .course-caption {
+               display: block;
+            }
+         }
+
          .card-img-overlay {
             background: linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(33,33,33,0.4) 40%, rgba(255,255,255,0) 100%);
 
@@ -97,7 +105,17 @@ export default {
                h6 {
                   color: $brand_secondary;
                }
-               
+
+            }
+
+         }
+         
+         .course-caption {
+            font-size: $nav_items;
+            display: none;
+
+            span {
+               margin-right: .5rem;
             }
          }
       }
