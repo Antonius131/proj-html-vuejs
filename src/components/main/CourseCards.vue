@@ -5,11 +5,13 @@
          v-for="(course, index) in coursesCards"
          :key="index"
       >
-         <div class="card rounded-0">
+         <div class="card">
             <img :src="course.imgPath" class="card-img" alt="card-img">
             <div class="card-img-overlay">
-               <h5 class="card-title">{{ course.price }}</h5>
-               <p class="card-text">{{ course.text }}</p>
+               <div class="card-body text-white">
+                  <h6 class="card-title">{{ course.price }}</h6>
+                  <p class="card-text">{{ course.text }}</p>
+               </div>
             </div>
          </div>
       </div>
@@ -52,10 +54,32 @@ export default {
 
    .row {
       padding: 2rem 4rem;
+
+      .card {
+         border: none;
+
+         .card-img-overlay {
+            background: linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(33,33,33,0.4) 40%, rgba(255,255,255,0) 100%);
+
+            .card-body {
+               position: absolute;
+               bottom: 0;
+               left: 0;
+
+               h6,
+               p {
+                  font-size: $nav_items;
+                  font-weight: 800;
+               }
+
+               h6 {
+                  color: $brand_secondary;
+               }
+               
+            }
+         }
+      }
    }
 
-   .card {
-      height: 400px;
-   }
 
 </style>
