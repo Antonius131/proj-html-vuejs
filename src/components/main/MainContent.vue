@@ -37,7 +37,10 @@
                title= "Explore how can I help you"
             />
             <CourseCards />
-            <CaptionText />
+            <CaptionText 
+               text = "Take the control of their life back and start doing things to make their dream come true."
+               link = "View all courses"
+            />
          </div>
       </section>
    </main>

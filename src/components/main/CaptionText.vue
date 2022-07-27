@@ -1,14 +1,17 @@
 <template>
    <div class="row">
-      <div class="col-12 text-center">
-         <p>Caption text <a href="#">Link</a></p>
+      <div class="col-4 offset-lg-4 text-center">
+         <p>{{ text }} <a href="#">{{ link }}</a></p>
       </div>
    </div>
 </template>
 
 <script>
 export default {
-
+   props: {
+      'text': String,
+      'link': String
+   }
 }
 </script>
 
