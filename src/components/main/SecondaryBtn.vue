@@ -1,12 +1,14 @@
 <template>
    <button type="button" class="btn btn-secondary">
-      Secondary Btn
+      {{ text }}
    </button>
 </template>
 
 <script>
 export default {
-
+   props: {
+      'text': String
+   }
 }
 </script>
 
