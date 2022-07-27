@@ -16,9 +16,21 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '/src/assets/css/variables.scss';
+
    .col-12.text-center.section-title {
       padding-left: 4rem;
       padding-right: 4rem;
+
+      h4 {
+        color: $brand_secondary;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        color: $brand_primary;
+      }
    }
 </style>
