@@ -48,7 +48,7 @@
          <div class="container">
             <div class="row">
                <div class="col-6">
-                  YouTube Video
+                  <ImgPreview />
                </div>
                <div class="col-6">
                   <h2>To thrive in business today, you'll need a good plan</h2>
@@ -69,18 +69,20 @@ import CoachCards from './CoachCards.vue'
 import CourseCards from './CourseCards.vue'
 import CaptionText from './CaptionText.vue'
 import InfoTabs from './InfoTabs.vue'
+import ImgPreview from './ImgPreview.vue'
 
 export default {
    components: {
-    BrandCards,
-    SectionTitle,
-    SecondaryBtn,
-    PrimaryBtn,
-    CoachCards,
-    CourseCards,
-    CaptionText,
-    InfoTabs
-}
+      BrandCards,
+      SectionTitle,
+      SecondaryBtn,
+      PrimaryBtn,
+      CoachCards,
+      CourseCards,
+      CaptionText,
+      InfoTabs,
+      ImgPreview
+   }
 }
 </script>
 
@@ -101,6 +103,7 @@ export default {
 
       .col-6 {
          padding: 2rem;
+         overflow: auto;
 
          h2 {
             font-weight: 700;
