@@ -78,6 +78,7 @@
                subtitle = "People are praising Maxcoach"
                title= "What make they love us?"
             />
+            <ReviewCards />
          </div>
       </section>
    </main>
@@ -94,6 +95,7 @@ import CaptionText from './CaptionText.vue'
 import InfoTabs from './InfoTabs.vue'
 import ImgPreview from './ImgPreview.vue'
 import EventCards from './EventCards.vue'
+import ReviewCards from './ReviewCards.vue'
 
 export default {
    components: {
@@ -107,6 +109,7 @@ export default {
     InfoTabs,
     ImgPreview,
     EventCards,
+    ReviewCards
 }
 }
 </script>
