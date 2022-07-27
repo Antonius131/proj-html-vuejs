@@ -1,5 +1,5 @@
 <template>
-   <div class="section-title">
+   <div class="text-center">
       <h4>lorem ipsum dolor sit amet</h4>
       <h2>Lorem ipsum dolor sit amet</h2>
    </div>

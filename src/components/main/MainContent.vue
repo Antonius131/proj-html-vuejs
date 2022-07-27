@@ -1,12 +1,22 @@
 <template>
    <main>
-      <h2>Main</h2>
+      <section>
+         <div class="container">
+            <div class="row">
+               <SectionTitle />
+            </div>
+         </div>
+      </section>
    </main>
 </template>
 
 <script>
-export default {
+import SectionTitle from './SectionTitle.vue';
 
+export default {
+   components: { 
+      SectionTitle 
+   }
 }
 </script>
 
