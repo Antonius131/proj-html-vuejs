@@ -47,7 +47,7 @@ export default {
          }
 
          #user-search {
-            border-left: 1px solid $bg_primary;
+            border-left: 1px solid $bg_secondary;
             padding: 1rem;
 
             input {
