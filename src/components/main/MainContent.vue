@@ -58,6 +58,6 @@ export default {
    }
 
    .secondary-bg {
-      background-color: $bg_secondary;
+      background-color: $border_color;
    }
 </style>
