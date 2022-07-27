@@ -50,7 +50,7 @@
                YouTube Video
             </div>
             <div class="col-6">
-               InfoTabs
+               <InfoTabs />
             </div>
          </div>
       </section>
@@ -65,6 +65,7 @@ import PrimaryBtn from './PrimaryBtn.vue'
 import CoachCards from './CoachCards.vue'
 import CourseCards from './CourseCards.vue'
 import CaptionText from './CaptionText.vue'
+import InfoTabs from './InfoTabs.vue'
 
 export default {
    components: {
@@ -74,7 +75,8 @@ export default {
     PrimaryBtn,
     CoachCards,
     CourseCards,
-    CaptionText
+    CaptionText,
+    InfoTabs
 }
 }
 </script>
@@ -93,7 +95,7 @@ export default {
    .container-fluid.yt-section {
       background-color: $yt_bg;
       color: $text_secondary;
-      padding-left: 4rem;
-      padding-right: 4rem;
+      padding-left: 10rem;
+      padding-right: 10rem;
    }
 </style>
