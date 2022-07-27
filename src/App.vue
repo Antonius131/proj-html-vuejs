@@ -10,6 +10,7 @@
 import MainHeader from './components/header/MainHeader.vue';
 import MainContent from './components/main/MainContent.vue';
 import MainFooter from './components/footer/MainFooter.vue';
+import '/node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 export default {
   name: 'App',
@@ -22,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '../node_modules/bootstrap/scss/bootstrap.scss';
+  @import '/node_modules/bootstrap/scss/bootstrap.scss';
   @import './assets/css/mixins.scss';
   @import './assets/css/variables.scss';
   
