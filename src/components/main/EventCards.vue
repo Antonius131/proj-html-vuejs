@@ -5,20 +5,16 @@
          v-for="(event, index) in eventCards"
          :key="index"
       >
-         <div class="card mb-3">
+         <div class="card mb-4">
             <div class="row g-0">
-               <div class="col-md-9">
-                  <div class="card-body">
-                     <p class="card-text"><small>{{ event.place }}</small></p>
-                     <h5 class="card-title">{{ event.title }}</h5>
-                  </div>
+               <div class="col-md-8 event-title-box">
+                  <p class="card-text"><small>{{ event.place }}</small></p>
+                  <h5 class="card-title">{{ event.title }}</h5>
                </div>
-               <div class="col-md-3 text-center">
-                  <h3 class="card-title">{{ event.day }}</h3>
+               <div class="col-md-4 text-center event-date-box">
+                  <h1 class="card-title">{{ event.day }}</h1>
                   <p class="card-text"><small>{{ event.month }}</small></p>
-                  <PrimaryBtn 
-                     text = "Get Ticket"   
-                  />
+                  <button type="button" class="btn btn-primary">Get Tickets</button>
                </div>
             </div>
          </div>
@@ -27,12 +23,7 @@
 </template>
 
 <script>
-import PrimaryBtn from './PrimaryBtn.vue';
-
 export default {
-   components: { 
-      PrimaryBtn 
-   },
    data: function() {
       return {
          eventCards: [
@@ -84,6 +75,40 @@ export default {
    .card {
       background-color: $border_color;
       border: none;
+      padding: 0 2rem;
+
+      .event-title-box {
+         padding: 0;
+
+         .card-text {
+            color: $text_primary_rgba;
+            margin-bottom: .25rem;
+         }
+
+         .card-title {
+            font-weight: 800;
+         }
+      }
+
+      .event-date-box {
+         padding: 0;
+
+         .card-title {
+            color: $brand_secondary;
+            font-size: 3rem;
+            margin-bottom: 0;
+         }
+
+         p.card-text {
+            font-weight: 900;
+            margin-bottom: .5rem;
+         }
+
+         button {
+            padding: .25rem 1.75rem;
+            background-color: $brand_secondary;
+         }
+      }
    }
 
 </style>
