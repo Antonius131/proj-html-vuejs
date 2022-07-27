@@ -73,7 +73,7 @@
       </section>
 
       <section class="secondary-bg">
-         <div class="container">
+         <div class="container-fluid">
             <SectionTitle
                subtitle = "People are praising Maxcoach"
                title= "What make they love us?"
