@@ -1,11 +1,13 @@
 <template>
    <div class="jumbotron">
       <div class="container">
-         <div class="wrap title-wrap">
-            <SectionTitle />
-         </div>
-         <div class="wrap img-wrap">
-            <img src="../../assets/img/hero/home-business-hero-avatar.png" alt="avatar">
+         <div class="row">
+            <div class="col-6 wrap title-wrap">
+               <SectionTitle />
+            </div>
+            <div class="col-6 wrap img-wrap">
+               <!-- <img src="../../assets/img/hero/home-business-hero-avatar.png" alt="avatar"> -->
+            </div>            
          </div>
       </div>
    </div>
@@ -40,10 +42,6 @@ export default {
          padding-top: 3rem;
          line-height: 0;
          height: 100%;
-
-         img {
-            height: 550px;
-         }
       }
    }
 </style>
