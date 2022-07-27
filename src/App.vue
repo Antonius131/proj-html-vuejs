@@ -31,20 +31,25 @@ export default {
     color: #2c3e50;
   }
 
+  section {
+    padding: $section_padding;
+  }
+
   .container {
     width: 70%;
 
-    .row {
-      padding: $row_padding;
+      .row {
+        padding: $row_padding;
+      }
 
       h4 {
         color: $brand_secondary;
         font-weight: 300;
+        margin-bottom: 2rem;
       }
 
       h3 {
         color: $brand_primary;
       }
-    }
   }
 </style>

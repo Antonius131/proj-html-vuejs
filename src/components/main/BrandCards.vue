@@ -1,15 +1,19 @@
 <template>
    <div class="row">
-      <div class="col-4">
-         <div class="card mb-3">
+      <div 
+         class="col-4"
+         v-for="(card, index) in brandCards"
+         :key="index"
+         >
+         <div class="card mb-5">
             <div class="row g-0">
                <div class="col-2">
                   <i>icon</i>
                </div>
                <div class="col-10">
                   <div class="card-body">
-                     <h5 class="card-title">Title</h5>
-                     <p class="card-text">Subtitle</p>
+                     <h5 class="card-title">{{ card.title }}</h5>
+                     <p class="card-text">{{ card.subtitle }}</p>
                   </div>
                </div>
             </div>
@@ -54,15 +58,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-   .card {
-      border: none;
-      
-      .row {
-         padding: 0;
-      }
+@import '../../assets/css/variables';
 
-      .card-body {
-         padding: 0;
+   .row {
+      padding: 0;
+      
+      .card {
+         border: none;
+
+         .row {
+            padding: 0;
+         }
+
+         .card-body {
+            padding: 0;
+
+            .card-text {
+               color: $text_primary_rgba;
+            }
+         }
       }
    }
+
 </style>
