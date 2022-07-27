@@ -44,13 +44,16 @@
          </div>
       </section>
 
-      <section class="container-fluid yt-section">
-         <div class="row">
-            <div class="col-6">
-               YouTube Video
-            </div>
-            <div class="col-6">
-               <InfoTabs />
+      <section class="yt-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-6">
+                  YouTube Video
+               </div>
+               <div class="col-6">
+                  <h2>To thrive in business today, you'll need a good plan</h2>
+                  <InfoTabs />
+               </div>
             </div>
          </div>
       </section>
@@ -81,7 +84,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../../assets/css/variables';
 
    section {
@@ -92,10 +95,18 @@ export default {
       background-color: $border_color;
    }
 
-   .container-fluid.yt-section {
+   .yt-section {
       background-color: $yt_bg;
       color: $text_secondary;
-      padding-left: 15rem;
-      padding-right: 15rem;
+
+      .col-6 {
+         padding: 2rem;
+
+         h2 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+         }
+      }
+
    }
 </style>
