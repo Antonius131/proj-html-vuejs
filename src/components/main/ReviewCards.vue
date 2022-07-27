@@ -1,21 +1,27 @@
 <template>
    <div class="row">
-      <div class="col-4">
-         <div 
-            class="card"
-            v-for="(review, index) in reviewCards"
-            :key="index"
-         >
+      <div 
+         class="col-4"
+         v-for="(review, index) in reviewCards"
+         :key="index"
+         :class="{ inactive : !review.isActive }"
+      >
+         <div class="card">
             <div class="card-body">
-               <h5 class="card-title">{{ rieview.title }}</h5>
+               <h5 class="card-title">{{ review.title }}</h5>
                <p class="card-text">{{ review.text }}</p>
-               <div class="user-review-box">
-                  <img 
-                     class="rounded-circle" 
-                     :src="review.imgPath" 
-                     alt="review-img">
-                  <h6 class="card-title">{{ review.name }}</h6>
-                  <p><small>{{ review.job }}</small></p>
+               <div class="row user-review-box mt-4">
+                  <div class="col-3">
+                     <img 
+                        class="rounded-circle img-fluid" 
+                        :src="review.imgPath" 
+                        alt="review-img"
+                     >
+                  </div>
+                  <div class="col-9">
+                     <h6>{{ review.name }}</h6>
+                     <p><small>{{ review.job }}</small></p>
+                  </div>
                </div>
             </div>
          </div>
@@ -58,6 +64,41 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../../assets/css/variables';
+   
+   .row {
+      padding: 2rem 4rem;
+
+      .card {
+         padding: 2rem;
+
+         .card-title {
+            font-weight: 700;
+         }
+
+         .card-text {
+            color: $text_primary_rgba;
+         }
+      }
+
+      .user-review-box {
+         padding: 0;
+
+         h6 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: $nav_items;
+         }
+
+         p {
+            color: $text_primary_rgba;
+         }
+      }
+
+      .inactive {
+         opacity: .2;
+      }
+   }
 
 </style>
