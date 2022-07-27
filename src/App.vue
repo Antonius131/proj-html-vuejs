@@ -25,12 +25,6 @@ export default {
   @import '../node_modules/bootstrap/scss/bootstrap.scss';
   @import './assets/css/mixins.scss';
   @import './assets/css/variables.scss';
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -38,8 +32,6 @@ export default {
   }
 
   .container {
-    @include flex-between;
     width: 70%;
-    margin: 0 auto;
   }
 </style>
