@@ -91,6 +91,8 @@ export default {
    }
 
    .container-fluid.yt-section {
+      background-color: $yt_bg;
+      color: $text_secondary;
       padding-left: 4rem;
       padding-right: 4rem;
    }
