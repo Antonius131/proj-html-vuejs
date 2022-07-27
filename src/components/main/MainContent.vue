@@ -29,6 +29,15 @@
             <CoachCards />
          </div>
       </section>
+
+      <section>
+         <div class="container">
+            <SectionTitle 
+               subtitle = "Let's dream big together"
+               title= "Explore how can I help you"
+            />
+         </div>
+      </section>
    </main>
 </template>
 
