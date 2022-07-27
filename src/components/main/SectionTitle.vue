@@ -1,7 +1,7 @@
 <template>
    <div class="row">
       <div class="col-12 text-center section-title">
-         <h4>{{ subtitle }}</h4>
+         <h5>{{ subtitle }}</h5>
          <h3>{{ title }}</h3>
       </div>
    </div>
@@ -23,10 +23,10 @@ export default {
       padding-left: 4rem;
       padding-right: 4rem;
 
-      h4 {
+      h5 {
         color: $brand_secondary;
         font-weight: 300;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
       }
 
       h3 {
