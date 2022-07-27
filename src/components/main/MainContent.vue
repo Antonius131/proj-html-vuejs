@@ -43,6 +43,17 @@
             />
          </div>
       </section>
+
+      <section class="container-fluid yt-section">
+         <div class="row text-center">
+            <div class="col-6">
+               YouTube Video
+            </div>
+            <div class="col-6">
+               InfoTabs
+            </div>
+         </div>
+      </section>
    </main>
 </template>
 
@@ -77,5 +88,10 @@ export default {
 
    .secondary-bg {
       background-color: $border_color;
+   }
+
+   .container-fluid.yt-section {
+      padding-left: 4rem;
+      padding-right: 4rem;
    }
 </style>
