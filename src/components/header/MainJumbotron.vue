@@ -3,7 +3,7 @@
       <div class="container">
          <div class="row">
             <div class="col-6 wrap title-wrap">
-               <SectionTitle />
+               
             </div>
             <div class="col-6 wrap img-wrap">
                <!-- <img src="../../assets/img/hero/home-business-hero-avatar.png" alt="avatar"> -->
@@ -14,12 +14,8 @@
 </template>
 
 <script>
-import SectionTitle from '../main/SectionTitle.vue';
 
 export default {
-   components: { 
-      SectionTitle 
-   }
 }
 </script>
 
