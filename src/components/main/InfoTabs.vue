@@ -1,5 +1,5 @@
 <template>
-   <div class="accordion">
+   <div class="accordion accordion-flush">
       <div 
          class="accordion-item"
          v-for="(accordion, index) in infoTabs"
@@ -10,7 +10,7 @@
             :id="accordion.headId"
          >
             <button 
-               class="accordion-button"
+               class="accordion-button collapsed"
                type="button"
                data-bs-toggle="collapse"
                :data-bs-target="accordion.dataTarget"
@@ -37,21 +37,21 @@ export default {
       return {
          infoTabs: [
             {
-               headId: "headingOne",
+               headId: "flush-headingOne",
                collapseId: "collapseOne",
                dataTarget: "#collapseOne",
                title: "How can we help?",
                body: "How many courses you've been on, using however many techniques and methods. Unless you've come to redlize the value of mindset, then you've yet to understand how success comes. With everyone else’s mindset involved impacting too. Hence why business coaching is so crucial for success."
             },
             {
-               headId: "headingTwo",
+               headId: "flush-headingTwo",
                collapseId: "collapseTwo",
                dataTarget: "#collapseTwo",
                title: "Why would I need a Business COACH?",
                body: "How many courses you've been on, using however many techniques and methods. Unless you've come to redlize the value of mindset, then you've yet to understand how success comes. With everyone else’s mindset involved impacting too. Hence why business coaching is so crucial for success."
             },
             {
-               headId: "headingThree",
+               headId: "flush-headingThree",
                collapseId: "collapseThree",
                dataTarget: "#collapseThree",
                title: "What is one-on-one coaching?",
@@ -63,6 +63,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../../assets/css/variables';
 
 </style>
