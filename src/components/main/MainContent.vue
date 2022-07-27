@@ -25,8 +25,4 @@ export default {
 </script>
 
 <style lang="scss">
-   .col-12.text-center.section-title {
-      padding-left: 4rem;
-      padding-right: 4rem;
-   }
 </style>

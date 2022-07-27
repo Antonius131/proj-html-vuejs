@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style>
-
+   .col-12.text-center.section-title {
+      padding-left: 4rem;
+      padding-right: 4rem;
+   }
 </style>
