@@ -31,7 +31,7 @@
       </section>
 
       <section>
-         <div class="container">
+         <div class="container-fluid">
             <SectionTitle 
                subtitle = "Let's dream big together"
                title= "Explore how can I help you"
