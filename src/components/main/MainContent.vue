@@ -100,6 +100,18 @@ export default {
    .yt-section {
       background-color: $yt_bg;
       color: $text_secondary;
+      background-image: url(../../assets/img/video/background-map-dots-top-right-transparent.png);
+      background-size: 55%;
+      background-repeat: no-repeat;
+      background-position-x: right;
+
+      .row {
+         background-image: url(../../assets/img/shapes/maxcoach-shape-07-100x100.png);
+         background-size: 10%;
+         background-repeat: no-repeat;
+         background-position-x: left;
+         background-position-y: bottom;
+      }
 
       .col-6 {
          padding: 2rem;
