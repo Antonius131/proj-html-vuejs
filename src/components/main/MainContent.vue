@@ -57,15 +57,19 @@
             </div>
          </div>
       </section>
+
+      <section>
          <div class="container">
             <SectionTitle
                subtitle = "Wanna transform your life?"
                title= "Upcoming Events"
             />
             <EventCards />
+            <CaptionText 
+               text = "Excited about our event?"
+               link = "View all events"
+            />
          </div>
-      <section>
-
       </section>
    </main>
 </template>
@@ -93,7 +97,7 @@ export default {
     CaptionText,
     InfoTabs,
     ImgPreview,
-    EventCards
+    EventCards,
 }
 }
 </script>
