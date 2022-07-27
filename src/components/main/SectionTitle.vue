@@ -1,7 +1,7 @@
 <template>
    <div class="section-title">
       <h4>lorem ipsum dolor sit amet</h4>
-      <h1>Lorem ipsum dolor sit amet</h1>
+      <h2>Lorem ipsum dolor sit amet</h2>
    </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
       font-weight: 300;
    }
 
-   h1 {
+   h2 {
       color: $brand_primary;
    }
 
