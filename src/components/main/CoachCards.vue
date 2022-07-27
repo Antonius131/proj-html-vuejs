@@ -51,32 +51,38 @@ export default {
 @import '/src/assets/css/variables';
 
    .card {
-      border-color: $border_color;
+      border: none;
       box-shadow: $box_shadow;
-   }
 
-   .card-body {
-      padding: 2rem 2.5rem;
+      &:hover {
+         cursor: pointer;
 
-      .card-text {
-         font-size: $nav_items;
-         color: $text_primary_rgba;
+         .go-to-btn {
+            background-color: $brand_secondary;
+            cursor: pointer;
+            color: $text_secondary;
+         }
       }
 
-   }
+      .card-body {
+         padding: 2rem 2.5rem;
 
-   .go-to-btn {
-      border-top: 1px solid $border_color;
-      padding: .75rem 0;
-      font-size: $nav_items;
-      color: $brand_secondary;
-      font-weight: 800;
-      text-decoration: none;
-      
-      &:hover {
-         background-color: $brand_secondary;
-         cursor: pointer;
-         color: $text_secondary;
+         .card-text {
+            font-size: $nav_items;
+            color: $text_primary_rgba;
+         }
+
+      }
+
+      .go-to-btn {
+         border-top: 1px solid $border_color;
+         padding: .75rem 0;
+         font-size: $nav_items;
+         color: $brand_secondary;
+         font-weight: 800;
+         text-decoration: none;
+         
+         
       }
    }
 </style>
