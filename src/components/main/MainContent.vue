@@ -45,7 +45,7 @@
       </section>
 
       <section class="container-fluid yt-section">
-         <div class="row text-center">
+         <div class="row">
             <div class="col-6">
                YouTube Video
             </div>
@@ -95,7 +95,7 @@ export default {
    .container-fluid.yt-section {
       background-color: $yt_bg;
       color: $text_secondary;
-      padding-left: 10rem;
-      padding-right: 10rem;
+      padding-left: 15rem;
+      padding-right: 15rem;
    }
 </style>

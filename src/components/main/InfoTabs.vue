@@ -1,5 +1,5 @@
 <template>
-   <div class="accordion accordion-flush">
+   <div class="accordion accordion-flush text-white">
       <div 
          class="accordion-item"
          v-for="(accordion, index) in infoTabs"
@@ -65,5 +65,39 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/css/variables';
+
+   .accordion {
+      border-bottom: 1px solid rgba(255,255,255,.4);
+      
+      .accordion-item {
+         background-color: transparent;
+         border-bottom: 1px solid $text_secondary_rgba;
+
+         .accordion-button {
+            color: $text_secondary;
+            background-color: transparent;
+
+            &::after {
+               content: none;
+            }
+
+            &::before {
+               content: "icon";
+               margin-right: .5rem;
+            }
+
+            &:focus {
+               color: $brand_secondary;
+               box-shadow: none;
+               background-color: transparent;
+            }
+         }
+
+         .accordion-body {
+            color: $text_secondary;
+            font-size: $nav_items;
+         }
+      }
+   }
 
 </style>
