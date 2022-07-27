@@ -41,7 +41,7 @@ export default {
       h4 {
         color: $brand_secondary;
         font-weight: 300;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
       }
 
       h3 {
