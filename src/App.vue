@@ -36,6 +36,15 @@ export default {
 
     .row {
       padding: $row_padding;
+
+      h4 {
+        color: $brand_secondary;
+        font-weight: 300;
+      }
+
+      h3 {
+        color: $brand_primary;
+      }
     }
   }
 </style>

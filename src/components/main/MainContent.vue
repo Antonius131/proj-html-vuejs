@@ -3,7 +3,10 @@
       <section>
          <div class="container">
             <div class="row">
-               <SectionTitle />
+               <div class="col-12 text-center">
+                  <h4>Let's dream big together</h4>
+                  <h3>We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive coaching in the new age of digitalization.</h3>
+               </div>
             </div>
          </div>
       </section>
@@ -11,11 +14,23 @@
 </template>
 
 <script>
-import SectionTitle from './SectionTitle.vue';
-
 export default {
-   components: { 
-      SectionTitle 
+   data: function() {
+      return {
+         sectionTitles: [
+            {
+               id: 1,
+               subtitle: 'Let\'s dream big together',
+               title: ''
+            },
+            {
+               id: 2,
+               subtitle: 'Let\'s dream big together',
+               title: 'Explore how can I help you'
+            },
+
+         ]
+      }
    }
 }
 </script>
