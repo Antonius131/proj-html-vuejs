@@ -31,10 +31,6 @@ export default {
     color: #2c3e50;
   }
 
-  section {
-    padding: $section_padding;
-  }
-
   .container {
     width: 70%;
 

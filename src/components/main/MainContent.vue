@@ -19,6 +19,15 @@
             </div>
          </div>
       </section>
+
+      <section class="secondary-bg">
+         <div class="container">
+            <SectionTitle 
+               subtitle = "Let's dream big together"
+               title= "Explore how can I help you"
+            />
+         </div>
+      </section>
    </main>
 </template>
 
@@ -30,13 +39,22 @@ import PrimaryBtn from './PrimaryBtn.vue'
 
 export default {
    components: {
-    BrandCards,
-    SectionTitle,
-    SecondaryBtn,
-    PrimaryBtn
-}
+      BrandCards,
+      SectionTitle,
+      SecondaryBtn,
+      PrimaryBtn
+   }
 }
 </script>
 
 <style lang="scss">
+@import '../../assets/css/variables';
+
+   section {
+      padding: $section_padding;
+   }
+
+   .secondary-bg {
+      background-color: $bg_secondary;
+   }
 </style>
