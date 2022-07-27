@@ -33,5 +33,9 @@ export default {
 
   .container {
     width: 70%;
+
+    .row {
+      padding: $row_padding;
+    }
   }
 </style>
