@@ -72,9 +72,12 @@
          </div>
       </section>
 
-      <section>
+      <section class="secondary-bg">
          <div class="container">
-            
+            <SectionTitle
+               subtitle = "People are praising Maxcoach"
+               title= "What make they love us?"
+            />
          </div>
       </section>
    </main>
