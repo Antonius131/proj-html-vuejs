@@ -1,6 +1,6 @@
 <template>
    <div class="row">
-      <div class="col-4 offset-lg-4 text-center">
+      <div class="col-4 offset-4 text-center">
          <p>{{ text }} <a href="#">{{ link }}</a></p>
       </div>
    </div>
@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoper>
+<style lang="scss" scoped>
 @import '../../assets/css/variables';
 
    p {
@@ -31,6 +31,4 @@ export default {
          }
       }
    }
-
-
 </style>
