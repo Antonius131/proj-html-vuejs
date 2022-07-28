@@ -33,12 +33,25 @@ export default {
       input.form-control {
          padding: .5rem 1rem;
          background-color: $border_color;
+
+         &:focus {
+            box-shadow: none;
+            border-color: $brand_primary;
+         }
       }
 
       .btn-primary {
          background-color: $brand_secondary;
          border: none;
          padding: 0 1.25rem;
+
+         &:focus {
+            box-shadow: none;
+         }
+
+         &:hover {
+            background-color: $brand_primary;
+         }
       }
    }
    
