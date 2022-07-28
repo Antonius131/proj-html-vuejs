@@ -3,13 +3,16 @@
       <div class="col-12">
          <h5>Explore</h5>
       </div>
-      <div 
-         class="col-12"
-         v-for="(link, index) in exploreItems"
-         :key="index"
-         >
-         <nav class="nav row flex-column" >
-            <a class="nav-link" :href="link.url">{{ link.text }}</a>
+      <div class="col-12">
+         <nav class="nav row flex-column">
+            <ul>
+               <li
+                  v-for="(link, index) in exploreItems"
+                  :key="index"
+               >
+                  <a class="nav-link" :href="link.url">{{ link.text }}</a>
+               </li>
+            </ul>
          </nav>
       </div>
    </div>
@@ -50,6 +53,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../../assets/css/variables';
 
+   ul {
+      list-style: none;
+
+      a.nav-link {
+         padding: .5rem 0;
+         color: $text_secondary_rgba;
+
+         &:hover {
+            color: $text_secondary;
+         }
+      }
+   }
 </style>
