@@ -11,13 +11,19 @@
                      <NavMenu />
                   </div>
                </div>
-               <div class="col-4 d-flex">
-                  <div class="col-6">                  
+               <div class="col-4 d-flex nav-user-options">
+                  <div class="col-1 flags-box">
+                     <img src="" alt="">
+                  </div>
+                  <div class="col-4">                  
                      <select class="form-select">
                         <option selected>English</option>
                         <option value="1">German</option>
                         <option value="2">French</option>
                      </select>
+                  </div>
+                  <div class="col-1 icon-box">
+                     <i class="fa-solid fa-circle-user"></i>
                   </div>
                   <div class="col-6">                  
                      <form class="d-flex" role="search">
