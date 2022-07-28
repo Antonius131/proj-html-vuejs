@@ -1,5 +1,5 @@
 <template>
-   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+   <ul class="navbar-nav me-auto mb-lg-0 d-flex justify-content-center">
       <li 
          class="nav-item"
          v-for="(link, index) in navMenuItems"
