@@ -23,7 +23,9 @@
                      </select>
                   </div>
                   <div class="col-2 icon-box">
-                     <i class="fa-solid fa-circle-user"></i>
+                     <span>
+                        <i class="fa-solid fa-circle-user"></i>
+                     </span>
                   </div>
                   <div class="col-4">                  
                      <form class="d-flex" role="search">
@@ -59,7 +61,18 @@ export default {
       }
 
       .icon-box {
-         align-content: center;
+         text-align: center;
+
+         span {
+            width:100%;
+            height: 100%;
+
+            i {
+               font-size: 1.25rem;
+               vertical-align: middle;
+               margin-top: .5rem;
+            }
+         }
       }
    }
    
