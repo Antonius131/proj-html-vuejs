@@ -4,44 +4,75 @@
          class="nav-item"
          v-for="(link, index) in navMenuItems"
          :key="index"
+         :class="{ 'dropdown' : link.isDropdown }"
       >
-         <a class="nav-link" :href="link.url">{{ link.text }}</a>
+         <a 
+            class="nav-link" 
+            :href="link.url"
+            :class="{ 'dropdown-toggle' : link.isDropdown }"
+         >
+               {{ link.text }}
+         </a>
+         <ul class="dropdown-menu">
+            <li v-for="(item, index) in link.dropdownMenu" :key="index">
+               <a class="dropdown-item" href="#">
+                  {{ item.text }}
+               </a>
+            </li>
+         </ul>
       </li>
    </ul>
 </template>
 
 <script>
 export default {
-   data: function() {
-      return {
-         navMenuItems: [
-            {
-               url: '#',
-               text: 'Home'
-            },
-            {
-               url: '#',
-               text: 'Pages'
-            },
-            {
-               url: '#',
-               text: 'Courses'
-            },
-            {
-               url: '#',
-               text: 'Features'
-            },
-            {
-               url: '#',
-               text: 'Blog'
-            },
-            {
-               url: '#',
-               text: 'Shop'
-            }
-         ]
-      }
-   }
+    data: function () {
+        return {
+            navMenuItems: [
+                {
+                  isDropdown: false,
+                  url: "#",
+                  text: "Home"
+                },
+                {
+                  isDropdown: false,
+                  url: "#",
+                  text: "Pages"
+                },
+                {
+                  isDropdown: true,
+                  url: "#",
+                  text: "Courses",
+                  dropdownMenu: [
+                     {
+                           text: "option"
+                     },
+                     {
+                           text: "option"
+                     },
+                     {
+                           text: "option"
+                     }
+                  ]
+                },
+                {
+                  isDropdown: false,
+                  url: "#",
+                  text: "Features"
+                },
+                {
+                  isDropdown: false,
+                  url: "#",
+                  text: "Blog"
+                },
+                {
+                  isDropdown: false,
+                  url: "#",
+                  text: "Shop"
+                }
+            ]
+        };
+    }
 }
 </script>
 
