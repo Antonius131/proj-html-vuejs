@@ -10,6 +10,8 @@
             class="nav-link" 
             :href="link.url"
             :class="{ 'dropdown-toggle' : link.isDropdown }"
+            :role="link.role"
+            :data-bs-toggle="link.toggle"
          >
                {{ link.text }}
          </a>
@@ -31,6 +33,8 @@ export default {
             navMenuItems: [
                 {
                   isDropdown: false,
+                  role : "",
+                  toggle: "",
                   url: "#",
                   text: "Home"
                 },
@@ -41,6 +45,8 @@ export default {
                 },
                 {
                   isDropdown: true,
+                  role : "button",
+                  toggle: "dropdown",
                   url: "#",
                   text: "Courses",
                   dropdownMenu: [
@@ -57,16 +63,22 @@ export default {
                 },
                 {
                   isDropdown: false,
+                  role : "",
+                  toggle: "",
                   url: "#",
                   text: "Features"
                 },
                 {
                   isDropdown: false,
+                  role : "",
+                  toggle: "",
                   url: "#",
                   text: "Blog"
                 },
                 {
                   isDropdown: false,
+                  role : "",
+                  toggle: "",
                   url: "#",
                   text: "Shop"
                 }
