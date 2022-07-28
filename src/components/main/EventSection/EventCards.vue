@@ -77,6 +77,17 @@ export default {
       border: none;
       padding: 0 2rem;
 
+      &:hover {
+         cursor: pointer;
+         background-color: #fff;
+         border-left: 2px solid $brand_secondary;
+         box-shadow: $box_shadow;
+
+         button.btn {
+            background-color: $brand_primary;
+         }
+      }
+
       .event-title-box {
          padding: 0;
 
@@ -107,6 +118,7 @@ export default {
          button {
             padding: .25rem 1.75rem;
             background-color: $brand_secondary;
+            border: none;
          }
       }
    }
