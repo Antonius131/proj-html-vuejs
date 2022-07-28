@@ -1,16 +1,7 @@
 <template>
    <main>
       <BrandSection />
-
-      <section class="secondary-bg">
-         <div class="container">
-            <SectionTitle 
-               subtitle = "Let's dream big together"
-               title= "Explore how can I help you"
-            />
-            <CoachCards />
-         </div>
-      </section>
+      <CoachesSection />
 
       <section>
          <div class="container-fluid">
@@ -80,7 +71,6 @@
 
 <script>
 import SectionTitle from './SectionTitle.vue'
-import CoachCards from './CoachCards.vue'
 import CourseCards from './CourseCards.vue'
 import CaptionText from './CaptionText.vue'
 import InfoTabs from './InfoTabs.vue'
@@ -89,11 +79,11 @@ import EventCards from './EventCards.vue'
 import ReviewCards from './ReviewCards.vue'
 import InputText from './InputText.vue'
 import BrandSection from './BrandSection/BrandSection.vue'
+import CoachesSection from './CoachesSection/CoachesSection.vue'
 
 export default {
    components: {
     SectionTitle,
-    CoachCards,
     CourseCards,
     CaptionText,
     InfoTabs,
@@ -101,7 +91,8 @@ export default {
     EventCards,
     ReviewCards,
     InputText,
-    BrandSection
+    BrandSection,
+    CoachesSection
 }
 }
 </script>
