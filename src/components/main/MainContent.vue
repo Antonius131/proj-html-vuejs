@@ -3,21 +3,7 @@
       <BrandSection />
       <CoachesSection />
       <CoursesSection />
-      
-
-      <section class="yt-section">
-         <div class="container">
-            <div class="row">
-               <div class="col-6">
-                  <ImgPreview />
-               </div>
-               <div class="col-6">
-                  <h2>To thrive in business today, you'll need a good plan</h2>
-                  <InfoTabs />
-               </div>
-            </div>
-         </div>
-      </section>
+      <YtSection />
 
       <section>
          <div class="container">
@@ -60,33 +46,31 @@
 <script>
 import SectionTitle from './SectionTitle.vue'
 import CaptionText from './CaptionText.vue'
-import InfoTabs from './InfoTabs.vue'
-import ImgPreview from './ImgPreview.vue'
 import EventCards from './EventCards.vue'
 import ReviewCards from './ReviewCards.vue'
 import InputText from './InputText.vue'
 import BrandSection from './BrandSection/BrandSection.vue'
 import CoachesSection from './CoachesSection/CoachesSection.vue'
 import CoursesSection from './CoursesSection/CoursesSection.vue'
+import YtSection from './YtSection/YtSection.vue'
 
 export default {
    components: {
     SectionTitle,
     CaptionText,
-    InfoTabs,
-    ImgPreview,
     EventCards,
     ReviewCards,
     InputText,
     BrandSection,
     CoachesSection,
-    CoursesSection
+    CoursesSection,
+    YtSection
 }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/css/variables';
+@import './src/assets/css/variables';
 
    section {
       padding: $section_padding;
@@ -94,33 +78,6 @@ export default {
 
    .secondary-bg {
       background-color: $border_color;
-   }
-
-   .yt-section {
-      background-color: $yt_bg;
-      color: $text_secondary;
-      background-image: url(../../assets/img/video/background-map-dots-top-right-transparent.png);
-      background-size: 55%;
-      background-repeat: no-repeat;
-      background-position-x: right;
-
-      .row {
-         background-image: url(../../assets/img/shapes/maxcoach-shape-07-100x100.png);
-         background-size: 10%;
-         background-repeat: no-repeat;
-         background-position-x: left;
-         background-position-y: bottom;
-      }
-
-      .col-6 {
-         padding: 2rem;
-         overflow: auto;
-
-         h2 {
-            font-weight: 700;
-            margin-bottom: 1rem;
-         }
-      }
    }
 
    .newsletter-section {

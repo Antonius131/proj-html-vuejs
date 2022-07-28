@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/css/variables';
+@import '/src/assets/css/variables';
 
    .accordion {
       border-bottom: 1px solid rgba(255,255,255,.4);

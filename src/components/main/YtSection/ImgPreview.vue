@@ -1,7 +1,7 @@
 <template>
    <div class="video-prev py-4">
-      <img class="prev-img rounded-2" src="../../assets/img/video/home-business-video-poster-670x450.jpg" alt="yt-prev">
-      <img class="ico-img" src="../../assets/img/video/icon-youtube-play.png" alt="yt-ico">
+      <img class="prev-img rounded-2" src="../../../assets/img/video/home-business-video-poster-670x450.jpg" alt="yt-prev">
+      <img class="ico-img" src="../../../assets/img/video/icon-youtube-play.png" alt="yt-ico">
    </div>
 </template>
 
