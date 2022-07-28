@@ -1,12 +1,14 @@
 <template>
    <div class="row">
-      <div class="input-group mb-3">
-         <input 
-            type="text"
-            class="form-control" 
-            placeholder="Enter your email" 
-         >
-         <button type="button">Subscribe</button>
+      <div class="col-6 offset-3">
+         <div class="input-group mb-3">
+            <input 
+               type="text"
+               class="form-control" 
+               placeholder="Enter your email" 
+            >
+            <button type="button" class="btn btn-primary">Subscribe</button>
+         </div>
       </div>
    </div>
 </template>
@@ -17,6 +19,23 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '/src/assets/css/variables.scss';
+
+   .row {
+      padding-top: 0;
+
+      input.form-control {
+         padding: .75rem 1rem;
+         background-color: $border_color;
+      }
+
+      .btn-primary {
+         background-color: $brand_secondary;
+         border: none;
+         padding: 0 1.25rem;
+      }
+   }
+   
 
 </style>
