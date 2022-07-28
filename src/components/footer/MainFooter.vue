@@ -13,6 +13,11 @@
                <NavInfo />
             </div>
          </div>
+         <div class="row brand-caption">
+            <div class="col-12 text-center">
+               <p>© 2020 Maxcoach. All Rights Reserved</p>
+            </div>
+         </div>
       </div>
    </footer>
 </template>
@@ -28,7 +33,7 @@ export default {
     SocialIcons,
     BrandAddress,
     NavExplore,
-    NavInfo
+    NavInfo,
 }
 }
 </script>
@@ -40,6 +45,13 @@ export default {
       background-color: $brand_primary;
       color: $text-secondary;
       padding: $section_padding;
-   }
 
+      .row {
+         padding: 0;
+      }
+
+      .brand-caption {
+         color: $text_secondary_rgba;
+      }
+   }
 </style>

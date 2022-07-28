@@ -56,15 +56,20 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/css/variables';
 
-   ul {
-      list-style: none;
+   .nav.row.flex-column {
+      padding: 0;
 
-      a.nav-link {
-         padding: .5rem 0;
-         color: $text_secondary_rgba;
+      ul {
+         list-style: none;
+         margin-bottom: 0;
 
-         &:hover {
-            color: $text_secondary;
+         a.nav-link {
+            padding: .5rem 0;
+            color: $text_secondary_rgba;
+
+            &:hover {
+               color: $text_secondary;
+            }
          }
       }
    }
