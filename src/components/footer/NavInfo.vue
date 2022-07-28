@@ -6,8 +6,11 @@
       <div class="col-12">
          <nav class="nav row flex-column">
             <ul>
-               <li>
-                  <a class="nav-link" href="#">Link</a>
+               <li
+                  v-for="(link, index) in exploreItems"
+                  :key="index"
+               >
+                  <a class="nav-link" :href="link.url">{{ link.text }}</a>
                </li>
             </ul>
          </nav>
