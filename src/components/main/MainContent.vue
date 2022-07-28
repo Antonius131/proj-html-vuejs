@@ -168,6 +168,15 @@ export default {
 
    .newsletter-section {
 
+      h3 {
+         color: $brand_secondary;
+         font-weight: 400;
+
+         strong {
+            color: $text_primary;
+         }
+      }
+
       .container {
          background-image: url('/src/assets/img/shapes/maxcoach-shape-09.png');
          background-repeat: no-repeat;
