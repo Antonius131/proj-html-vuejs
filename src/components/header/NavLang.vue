@@ -1,17 +1,15 @@
 <template>
-   <div class="nav-lang">
-      <select>
-         <option 
-            v-for="(lang, index) in navLangs"
-            :key="index"
-            :value="lang.value"
-         >
-            <p>
-               {{ lang.lang }}
-            </p>
-         </option>
-      </select>
-   </div>
+   <select class="form-select">
+      <option 
+         v-for="(lang, index) in navLangs"
+         :key="index"
+         :value="lang.value"
+      >
+         <p>
+            {{ lang.lang }}
+         </p>
+      </option>
+   </select>
 </template>
 
 <script>

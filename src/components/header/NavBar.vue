@@ -18,11 +18,7 @@
                      <img src="" alt="">
                   </div>
                   <div class="col-4">                  
-                     <select class="form-select">
-                        <option selected>English</option>
-                        <option value="1">German</option>
-                        <option value="2">French</option>
-                     </select>
+                     <NavLang />
                   </div>
                   <div class="col-2 icon-box">
                      <span>
@@ -46,10 +42,12 @@
 
 <script>
 import NavMenu from './NavMenu.vue';
+import NavLang from './NavLang.vue';
 
 export default {
    components: {
-    NavMenu
+    NavMenu,
+    NavLang
 }
 }
 </script>
