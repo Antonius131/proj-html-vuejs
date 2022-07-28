@@ -22,14 +22,14 @@
                         <option value="2">French</option>
                      </select>
                   </div>
-                  <div class="col-2 icon-box">
+                  <div class="col-1 icon-box">
                      <span>
                         <i class="fa-solid fa-circle-user"></i>
                      </span>
                   </div>
-                  <div class="col-4">                  
-                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <div class="col-5 user-search-box">                  
+                     <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search...">
                         <button class="btn" type="submit">
                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -56,6 +56,7 @@ export default {
    @import '../../assets/css/variables.scss';
 
    #navbarSupportedContent {
+
       div {
          padding: 0 .25rem;
       }
@@ -71,6 +72,24 @@ export default {
                font-size: 1.25rem;
                vertical-align: middle;
                margin-top: .5rem;
+            }
+         }
+      }
+
+      .user-search-box {
+         padding: 0 .5rem;
+         border-left: 2px solid $border_color;
+
+         .form-control {
+            border: none;
+            margin-right: 0;
+
+            &:focus {
+               box-shadow: none;
+            }
+
+            button.btn:hover {
+               border-color: transparent;
             }
          }
       }
