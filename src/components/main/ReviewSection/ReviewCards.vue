@@ -73,6 +73,10 @@ export default {
       .card {
          padding: 2rem;
 
+         &:hover {
+            cursor: pointer;
+         }
+
          .card-title {
             font-weight: 700;
          }
