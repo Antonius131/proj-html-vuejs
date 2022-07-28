@@ -15,6 +15,25 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../../assets/css/variables';
+
+   h5 {
+      margin-bottom: 1rem;
+   }
+
+   p {
+      color: $text_secondary_rgba;
+      font-size: $nav_items;
+   }
+
+   a {
+      text-decoration: none;
+      color: $text_secondary_rgba;
+
+      &:hover {
+         color: $text_secondary;
+      }
+   }
 
 </style>

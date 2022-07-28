@@ -3,6 +3,7 @@
       <div class="container">
          <div class="row">
             <div class="col-6">
+               <BrandAddress />
                <SocialIcons />
             </div>
             <div class="col-6">
@@ -15,11 +16,13 @@
 
 <script>
 import SocialIcons from './SocialIcons.vue';
+import BrandAddress from './BrandAddress.vue';
 
 export default {
-   components: { 
-      SocialIcons
-   }
+   components: {
+    SocialIcons,
+    BrandAddress
+}
 }
 </script>
 
