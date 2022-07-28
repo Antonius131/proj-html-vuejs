@@ -59,12 +59,12 @@ export default {
             font-size: $nav_items;
             display: inline;
             margin: 0 1rem;
+         }
 
-            a {
-               color: $brand_primary;
+         .nav-link {
+               color: $text_primary;
                text-decoration: none;
             }
-         }
       }
    }
 </style>
