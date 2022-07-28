@@ -54,16 +54,16 @@ export default {
       ul {
          list-style: none;
 
-         li {
+         li.nav-item {
             font-size: $nav_items;
             display: inline;
             margin: 0 1rem;
-         }
 
-         .nav-link {
+            .nav-link {
                color: $text_primary;
                text-decoration: none;
             }
+         }
       }
    }
 </style>
