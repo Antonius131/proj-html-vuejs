@@ -1,7 +1,7 @@
 <template>
    <div class="row">
       <div class="col-12">
-         <h5>Explore</h5>
+         <h5>Informations</h5>
       </div>
       <div class="col-12">
          <nav class="nav row flex-column">

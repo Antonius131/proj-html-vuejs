@@ -10,7 +10,7 @@
                <NavExplore />
             </div>
             <div class="col-2">
-
+               <NavInfo />
             </div>
          </div>
       </div>
@@ -21,12 +21,14 @@
 import SocialIcons from './SocialIcons.vue';
 import BrandAddress from './BrandAddress.vue';
 import NavExplore from './NavExplore.vue';
+import NavInfo from './NavInfo.vue';
 
 export default {
    components: {
     SocialIcons,
     BrandAddress,
-    NavExplore
+    NavExplore,
+    NavInfo
 }
 }
 </script>
