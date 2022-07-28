@@ -31,7 +31,7 @@ export default {
       background-position-y: top;
 
       input.form-control {
-         padding: .75rem 1rem;
+         padding: .5rem 1rem;
          background-color: $border_color;
       }
 
