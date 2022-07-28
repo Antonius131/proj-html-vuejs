@@ -22,12 +22,12 @@
                         <option value="2">French</option>
                      </select>
                   </div>
-                  <div class="col-1 icon-box">
+                  <div class="col-2 icon-box">
                      <span>
                         <i class="fa-solid fa-circle-user"></i>
                      </span>
                   </div>
-                  <div class="col-5 user-search-box">                  
+                  <div class="col-4 user-search-box">                  
                      <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search...">
                         <button class="btn" type="submit">
@@ -83,6 +83,7 @@ export default {
          .form-control {
             border: none;
             margin-right: 0;
+            font-size: $nav_items;
 
             &:focus {
                box-shadow: none;
