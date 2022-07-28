@@ -2,20 +2,8 @@
    <main>
       <BrandSection />
       <CoachesSection />
-
-      <section>
-         <div class="container-fluid">
-            <SectionTitle 
-               subtitle = "Let's dream big together"
-               title= "Explore how can I help you"
-            />
-            <CourseCards />
-            <CaptionText 
-               text = "Take the control of their life back and start doing things to make their dream come true."
-               link = "View all courses"
-            />
-         </div>
-      </section>
+      <CoursesSection />
+      
 
       <section class="yt-section">
          <div class="container">
@@ -71,7 +59,6 @@
 
 <script>
 import SectionTitle from './SectionTitle.vue'
-import CourseCards from './CourseCards.vue'
 import CaptionText from './CaptionText.vue'
 import InfoTabs from './InfoTabs.vue'
 import ImgPreview from './ImgPreview.vue'
@@ -80,11 +67,11 @@ import ReviewCards from './ReviewCards.vue'
 import InputText from './InputText.vue'
 import BrandSection from './BrandSection/BrandSection.vue'
 import CoachesSection from './CoachesSection/CoachesSection.vue'
+import CoursesSection from './CoursesSection/CoursesSection.vue'
 
 export default {
    components: {
     SectionTitle,
-    CourseCards,
     CaptionText,
     InfoTabs,
     ImgPreview,
@@ -92,7 +79,8 @@ export default {
     ReviewCards,
     InputText,
     BrandSection,
-    CoachesSection
+    CoachesSection,
+    CoursesSection
 }
 }
 </script>
