@@ -2,11 +2,11 @@
    <footer>
       <div class="container">
          <div class="row">
-            <div class="col-6">
+            <div class="col-8">
                <BrandAddress />
                <SocialIcons />
             </div>
-            <div class="col-4">
+            <div class="col-2">
                <NavExplore />
             </div>
             <div class="col-2">
