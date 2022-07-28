@@ -24,7 +24,6 @@ export default {
 
 <style lang="scss">
   @import '/node_modules/bootstrap/scss/bootstrap.scss';
-  @import './assets/css/mixins.scss';
   @import './assets/css/variables.scss';
   
   #app {
