@@ -1,45 +1,32 @@
 <template>
-   <select class="form-select">
+<div class="lang-box">
+   <select class="form-select" v-model="selectedLang">
       <option 
          v-for="(lang, index) in navLangs"
          :key="index"
-         :value="lang.value"
       >
-         <p>
-            {{ lang.lang }}
-         </p>
+         {{ lang.lang }}
       </option>
    </select>
+</div>
 </template>
 
 <script>
 export default {
    data: function() {
       return {
+         selectedLang: 'English',
          navLangs: [
             {
-               value: 'en',
                lang: 'English'
             },
             {
-               value: 'de',
                lang: 'German'
             },
             {
-               value: 'fr',
                lang: 'French'
             }
          ]
-      }
-   },
-   methods: {
-      getFlag() {
-         console.log(this.navLangs);
-         for (let i = 0; i < this.navLangs.length; i++) {
-            const value = this.navLangs[i].value;
-            console.log(value);
-            return value;
-         }
       }
    }
 }
