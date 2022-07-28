@@ -12,7 +12,7 @@
 
 <script>
 import SectionTitle from '../SectionTitle.vue';
-import CoachCards from '../CoachCards.vue';
+import CoachCards from './CoachCards.vue';
 export default {
     components: { SectionTitle, CoachCards }
 }

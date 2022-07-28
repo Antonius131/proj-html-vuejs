@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import BrandCards from '../BrandCards.vue';
+import BrandCards from './BrandCards.vue';
 import SectionTitle from '../SectionTitle.vue';
 import PrimaryBtn from '../PrimaryBtn.vue';
 import SecondaryBtn from '../SecondaryBtn.vue';
