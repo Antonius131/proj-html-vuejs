@@ -3,7 +3,7 @@
       <div class="container-fluid">
          <div class="col-2 logo-box">
             <a class="navbar-brand" href="#">
-               <img src="" alt="brand-logo">
+               <img class="img-fluid logo-img" src="../../assets/img/dark-logo.png" alt="brand-logo">
             </a>
          </div>
          <div class="col-10">
@@ -56,6 +56,14 @@ export default {
 
 <style lang="scss">
    @import '../../assets/css/variables.scss';
+
+   .logo-box {
+      padding-left: 3rem;
+
+      .logo-img {
+         height: 20px;
+      }
+   }
 
    #navbarSupportedContent {
 
