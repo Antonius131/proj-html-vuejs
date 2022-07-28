@@ -61,6 +61,14 @@ export default {
          padding: 0 .25rem;
       }
 
+      .form-select {
+         border: none;
+
+         &:focus {
+            box-shadow: none;
+         }
+      }
+
       .icon-box {
          text-align: center;
 
