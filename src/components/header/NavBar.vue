@@ -1,64 +1,35 @@
 <template>
-   <nav>
-      <div id="nav-brand">
-         <img src="" alt="MaxCoach logo">
+   <nav class="navbar navbar-expand-lg">
+   <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a class="nav-link" href="#">Home</a>
+            </li>
+         </ul>
+         <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+         </form>
       </div>
-      <NavMenu />
-      <div class="nav-options">
-         <NavLang />
-         <div id="user-account">
-            <i>icon</i>
-         </div>
-         <div id="user-search">
-            <input type="search" placeholder="Search...">
-            <button class="btn">icon</button>
-         </div>
-      </div>
+   </div>
    </nav>
 </template>
 
 <script>
-import NavMenu from './NavMenu.vue';
-import NavLang from './NavLang.vue';
 
 export default {
    components: {
-      NavMenu,
-      NavLang
    }
 }
 </script>
 
 <style lang="scss">
-   @import '../../assets/css/mixins.scss';
    @import '../../assets/css/variables.scss';
-
-   nav {
-      @include flex-between;
-      height: 100%;
-      padding-left: 4rem;
-
-      .nav-options {
-         @include flex-between;
-
-         #user-account,
-         .nav-lang {
-            padding: 0 .75rem;
-         }
-
-         #user-search {
-            border-left: 1px solid $bg_secondary;
-            padding: 1rem;
-
-            input {
-               font-size: $nav_items;
-               padding: 0.5rem;
-               background-color: transparent;
-               border: none;
-            }
-         }
-      }
-   }
 
    
 </style>
