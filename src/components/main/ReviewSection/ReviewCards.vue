@@ -65,7 +65,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/css/variables';
+@import '/src/assets/css/variables';
    
    .row {
       padding: 2rem 4rem;

@@ -5,17 +5,9 @@
       <CoursesSection />
       <YtSection />
       <EventSection />
-      
+      <ReviewSection />
 
-      <section class="secondary-bg">
-         <div class="container-fluid">
-            <SectionTitle
-               subtitle = "People are praising Maxcoach"
-               title= "What make they love us?"
-            />
-            <ReviewCards />
-         </div>
-      </section>
+      
 
       <section class="newsletter-section">
          <div class="container">
@@ -32,25 +24,23 @@
 </template>
 
 <script>
-import SectionTitle from './SectionTitle.vue'
-import ReviewCards from './ReviewCards.vue'
 import InputText from './InputText.vue'
 import BrandSection from './BrandSection/BrandSection.vue'
 import CoachesSection from './CoachesSection/CoachesSection.vue'
 import CoursesSection from './CoursesSection/CoursesSection.vue'
 import YtSection from './YtSection/YtSection.vue'
 import EventSection from './EventSection/EventSection.vue'
+import ReviewSection from './ReviewSection/ReviewSection.vue'
 
 export default {
    components: {
-    SectionTitle,
-    ReviewCards,
     InputText,
     BrandSection,
     CoachesSection,
     CoursesSection,
     YtSection,
-    EventSection
+    EventSection,
+    ReviewSection
 }
 }
 </script>
