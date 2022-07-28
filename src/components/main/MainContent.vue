@@ -4,20 +4,8 @@
       <CoachesSection />
       <CoursesSection />
       <YtSection />
-
-      <section>
-         <div class="container">
-            <SectionTitle
-               subtitle = "Wanna transform your life?"
-               title= "Upcoming Events"
-            />
-            <EventCards />
-            <CaptionText 
-               text = "Excited about our event?"
-               link = "View all events"
-            />
-         </div>
-      </section>
+      <EventSection />
+      
 
       <section class="secondary-bg">
          <div class="container-fluid">
@@ -45,26 +33,24 @@
 
 <script>
 import SectionTitle from './SectionTitle.vue'
-import CaptionText from './CaptionText.vue'
-import EventCards from './EventCards.vue'
 import ReviewCards from './ReviewCards.vue'
 import InputText from './InputText.vue'
 import BrandSection from './BrandSection/BrandSection.vue'
 import CoachesSection from './CoachesSection/CoachesSection.vue'
 import CoursesSection from './CoursesSection/CoursesSection.vue'
 import YtSection from './YtSection/YtSection.vue'
+import EventSection from './EventSection/EventSection.vue'
 
 export default {
    components: {
     SectionTitle,
-    CaptionText,
-    EventCards,
     ReviewCards,
     InputText,
     BrandSection,
     CoachesSection,
     CoursesSection,
-    YtSection
+    YtSection,
+    EventSection
 }
 }
 </script>

@@ -70,7 +70,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/css/variables';
+@import '/src/assets/css/variables';
 
    .card {
       background-color: $border_color;
