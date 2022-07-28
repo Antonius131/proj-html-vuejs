@@ -90,6 +90,7 @@
                   <p>Enter your email address to register to our new newsletter subscription delivered on a regular basis!</p>
                </div>
             </div>
+            <InputText />
          </div>
       </section>
    </main>
@@ -107,6 +108,7 @@ import InfoTabs from './InfoTabs.vue'
 import ImgPreview from './ImgPreview.vue'
 import EventCards from './EventCards.vue'
 import ReviewCards from './ReviewCards.vue'
+import InputText from './InputText.vue'
 
 export default {
    components: {
@@ -120,7 +122,8 @@ export default {
     InfoTabs,
     ImgPreview,
     EventCards,
-    ReviewCards
+    ReviewCards,
+    InputText
 }
 }
 </script>
