@@ -164,6 +164,15 @@ export default {
             margin-bottom: 1rem;
          }
       }
+   }
 
+   .newsletter-section {
+
+      .container {
+         background-image: url('/src/assets/img/shapes/maxcoach-shape-09.png');
+         background-repeat: no-repeat;
+         background-position: right;
+         background-size: 18%;
+      }
    }
 </style>

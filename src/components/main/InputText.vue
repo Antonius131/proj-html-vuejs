@@ -24,6 +24,11 @@ export default {
 
    .row {
       padding-top: 0;
+      background-image: url('/src/assets/img/shapes/maxcoach-shape-02.png');
+      background-repeat: no-repeat;
+      background-size: 8%;
+      background-position-x: right;
+      background-position-y: top;
 
       input.form-control {
          padding: .75rem 1rem;
