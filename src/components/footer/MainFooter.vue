@@ -6,7 +6,10 @@
                <BrandAddress />
                <SocialIcons />
             </div>
-            <div class="col-6">
+            <div class="col-4">
+               <NavExplore />
+            </div>
+            <div class="col-2">
 
             </div>
          </div>
@@ -17,11 +20,13 @@
 <script>
 import SocialIcons from './SocialIcons.vue';
 import BrandAddress from './BrandAddress.vue';
+import NavExplore from './NavExplore.vue';
 
 export default {
    components: {
     SocialIcons,
-    BrandAddress
+    BrandAddress,
+    NavExplore
 }
 }
 </script>
