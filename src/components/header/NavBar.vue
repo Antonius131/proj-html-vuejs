@@ -1,8 +1,10 @@
 <template>
    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-         <div class="col-2">
-            <a class="navbar-brand" href="#">Navbar</a>
+         <div class="col-2 logo-box">
+            <a class="navbar-brand" href="#">
+               <img src="" alt="brand-logo">
+            </a>
          </div>
          <div class="col-10">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
