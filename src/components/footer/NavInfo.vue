@@ -45,6 +45,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../../assets/css/variables';
+
+   ul {
+      list-style: none;
+
+      a.nav-link {
+         padding: .5rem 0;
+         color: $text_secondary_rgba;
+
+         &:hover {
+            color: $text_secondary;
+         }
+      }
+   }
 
 </style>
