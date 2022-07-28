@@ -35,7 +35,7 @@ export default {
 @import '../../assets/css/variables';
 
    .icon-box {
-      padding: 1rem .5rem;
+      margin-right: 1rem;
       color: $text_secondary_rgba;
    }
 
