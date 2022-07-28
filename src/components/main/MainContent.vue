@@ -81,6 +81,17 @@
             <ReviewCards />
          </div>
       </section>
+
+      <section class="newsletter-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-6 offset-3 text-center">
+                  <h3><strong>Subscribe</strong> Newsletters</h3>
+                  <p>Enter your email address to register to our new newsletter subscription delivered on a regular basis!</p>
+               </div>
+            </div>
+         </div>
+      </section>
    </main>
 </template>
 
