@@ -12,7 +12,7 @@
                   </div>
                </div>
                <div class="col-4 d-flex nav-user-options">
-                  <div class="col-1 flags-box">
+                  <div class="col-2 flags-box">
                      <img src="" alt="">
                   </div>
                   <div class="col-4">                  
@@ -22,13 +22,15 @@
                         <option value="2">French</option>
                      </select>
                   </div>
-                  <div class="col-1 icon-box">
+                  <div class="col-2 icon-box">
                      <i class="fa-solid fa-circle-user"></i>
                   </div>
-                  <div class="col-6">                  
+                  <div class="col-4">                  
                      <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn" type="submit">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                      </form>
                   </div>
                </div>
@@ -51,5 +53,14 @@ export default {
 <style lang="scss">
    @import '../../assets/css/variables.scss';
 
+   #navbarSupportedContent {
+      div {
+         padding: 0 .25rem;
+      }
+
+      .icon-box {
+         align-content: center;
+      }
+   }
    
 </style>
