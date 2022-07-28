@@ -1,28 +1,45 @@
 <template>
-   <div class="nav-menu">
-      <ul>
-         <li 
-            v-for="item in navMenuItems"
-            :key="item"
-         >
-         <a href="#">{{ item }}</a>
-         </li>
-      </ul>
-   </div>
+   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li 
+         class="nav-item"
+         v-for="(link, index) in navMenuItems"
+         :key="index"
+      >
+         <a class="nav-link" :href="link.url">{{ link.text }}</a>
+      </li>
+   </ul>
 </template>
 
 <script>
 export default {
    data: function() {
       return {
-         navMenuItems: {
-            _1stItem: 'Home',
-            _2ndtItem: 'Pages',
-            _3rdItem: 'Courses',
-            _4thItem: 'Features',
-            _5thItem: 'Blog',
-            _6thItem: 'Shop'
-         }
+         navMenuItems: [
+            {
+               url: '#',
+               text: 'Home'
+            },
+            {
+               url: '#',
+               text: 'Pages'
+            },
+            {
+               url: '#',
+               text: 'Courses'
+            },
+            {
+               url: '#',
+               text: 'Features'
+            },
+            {
+               url: '#',
+               text: 'Blog'
+            },
+            {
+               url: '#',
+               text: 'Shop'
+            }
+         ]
       }
    }
 }
