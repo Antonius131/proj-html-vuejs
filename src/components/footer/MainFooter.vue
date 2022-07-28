@@ -15,8 +15,11 @@
 
 <script>
 import SocialIcons from './SocialIcons.vue';
+
 export default {
-    components: { SocialIcons }
+   components: { 
+      SocialIcons
+   }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
    <div class="row">
       <div class="col-12">
-         <div 
+         <span 
             class="icon-box"
             v-for="brand in socialIcons"
             :key="brand"
@@ -11,7 +11,7 @@
                :class="brand"
             >
             </i>
-         </div>
+         </span>
       </div>
    </div>
 </template>
@@ -31,6 +31,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../../assets/css/variables';
+
+   .icon-box {
+      padding: 1rem .5rem;
+      color: $text_secondary_rgba;
+   }
 
 </style>
