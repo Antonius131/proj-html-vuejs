@@ -2,12 +2,19 @@
    <div class="row">
       <div class="jumbotron">
          <div class="container">
-            <div class="row">
-               <div class="col-6 wrap title-wrap">
-                  <SectionTitle 
-                     subtitle = "New Challenges, New Skills"
-                     title = "Build your own life choaching business"
-                     paragraph = "Whole-Life Business Coaching for committed entrepreneurs"
+            <div class="row align-items-center">
+               <div class="col-6 title-wrap">
+                  <h5>
+                     New Challenges, New Skills
+                  </h5>
+                  <h1>
+                     Build your own life choaching business
+                  </h1>
+                  <p>
+                     Whole-Life Business Coaching for committed entrepreneurs
+                  </p>
+                  <PrimaryBtn 
+                     text = "Get started today"
                   />
                </div>
                <div class="col-6 img-wrap">
@@ -21,10 +28,12 @@
 </template>
 
 <script>
-import SectionTitle from '../main/SectionTitle.vue';
+import PrimaryBtn from '../main/PrimaryBtn.vue';
 
 export default {
-    components: { SectionTitle }
+   components: { 
+      PrimaryBtn 
+   }
 }
 </script>
 
@@ -36,6 +45,26 @@ export default {
 
       .jumbotron {
          background-color: $hero_bg;
+
+         .title-wrap {
+            padding-right: 6rem;
+
+            h5 {
+               color: $brand_secondary;
+               font-weight: 00;
+               margin-bottom: 1rem;
+            }
+
+            h1 {
+               color: $brand_primary;
+               text-transform: uppercase;
+               font-weight: 800;
+            }
+
+            p {
+               color: $text_primary_rgba;
+            }
+         }
 
          .img-wrap {
             position: relative;
