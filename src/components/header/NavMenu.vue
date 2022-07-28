@@ -48,21 +48,16 @@ export default {
 <style lang="scss" scoped>
    @import '../../assets/css/variables.scss';
 
-   .nav-menu {
-      text-align: center;
+   ul {
+      list-style: none;
 
-      ul {
-         list-style: none;
+      li.nav-item {
+         display: inline;
+         margin: 0 .5rem;
 
-         li.nav-item {
-            font-size: $nav_items;
-            display: inline;
-            margin: 0 1rem;
-
-            .nav-link {
-               color: $text_primary;
-               text-decoration: none;
-            }
+         .nav-link {
+            color: $text_primary;
+            text-decoration: none;
          }
       }
    }
