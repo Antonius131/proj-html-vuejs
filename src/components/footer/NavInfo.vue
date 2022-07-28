@@ -17,7 +17,28 @@
 
 <script>
 export default {
-
+   data: function() {
+      return {
+         exploreItems: [
+            {
+               url: '#',
+               text: 'Membership'
+            },
+            {
+               url: '#',
+               text: 'Purchase guides'
+            },
+            {
+               url: '#',
+               text: 'Privacy policy'
+            },
+            {
+               url: '#',
+               text: 'Terms of service'
+            }
+         ]
+      }
+   }
 }
 </script>
 
